@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@700&family=Source+Sans+Pro:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    box-shadow: 0 .5rem 1rem rgba(12, 1, 1, 0.1);
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.nav{
+    margin-right: 5rem;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  
+ }
+ 
+ li{
+     list-style: none;
+ }
+ li >a{
+     margin: 30px;
+     text-decoration: none;
+     font-size: 19px;
+     font-weight: bold;
+     color: #A2A182;
+     font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ li >a:hover{
+     font-weight: bolder;
+     color: #000;
+ }
+ 
+ .reserva-btn{
+    margin-left: 9rem;
+    font-size: 22px;
+    padding: 0.4rem 0.8rem;
+    border:3px #A2A182 solid;
+    border-radius: 4px;
+  }
+  
+  .reserva-btn:hover{
+      background-color: #A2A182;
+      border: 3px #A2A182 solid;
+      color: #fff;
+  }
+
+  .hamburguesa{
+    visibility:hidden;
+    height: 2px;
+}
+
+  .titulo-domo h2{
+      margin-top: 2.5rem;
+      color: #0a1128 ;
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: bolder;
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+  }
+
+  hr{
+      width: 6rem;
+      height: 0.2rem;
+      background-color: #A2A182;
+      margin-left: 45rem;
+  }
+
+  .titulo-domo p{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 0.5rem;
+  }
+
+  .img-domo img{
+    width: 20rem;
+    height: 22rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px  15px 1px #9ba2bb;
+
+  }
+
+  .part-uno{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -22.2rem;
+      margin-bottom: 1rem;
+      /*border: 3.5px #c6d3e9 solid;*/
+      background-color: #edf2f8;
+      margin-left: 26rem;
+      margin-right: 40rem;
+      padding: 30px;
+      width: 20rem;
+      height: 22rem;
+      border-radius: 3px;
+      box-shadow: 0px 0px  15px 1px #9ba2bb;
+  }
+
+  .todos-domos h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #A2A182;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    /*margin-top: -10rem;*/
+  }
+
+  .todos-domos p{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+  }
+
+  .todos-domos .rating img{
+      width: 1rem;
+  }
+
+  .todos-domos a{
+      padding: 8px 15px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      border: 3px #A2A182 solid;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-top: 1rem;
+      text-align: center;
+      color: #A2A182;
+  }
+
+  .todos-domos a:hover{
+      background: #A2A182;
+      color: #fff;
+  }
+
+  .part-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -22.2rem;
+    margin-bottom: 4rem;
+    background-color: #edf2f8;;
+    margin-left: 26rem;
+    margin-right: 40rem;
+    padding: 20px;
+    width: 20rem;
+    height: 22rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px  15px 1px #9ba2bb;
+    
+  }
+
+  .tipos-dos{
+      margin-top: -26rem;
+      margin-left: 44rem;
+      margin-bottom: 0.5rem;
+      
+  }
+
+.tipos-tres{
+    margin-top: -26rem;
+    margin-left: 44rem;
+}
+
+
+/* FOOTER*/
+.pie-pagina{
+    width: 100%;
+    height: 25rem;
+    background-color: #0a1128;
+    
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info h4{
+    font-family: 'Livvic', sans-serif;
+    color: #fff;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.info .ultimo{
+    margin-right: 14rem;
+}
+
+.barra-footer1{
+    background-color: #D6A99E;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.barra-footer2{
+    background-color: #D6A99E;
+    width: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.barra-footer3{
+    background-color: #D6A99E;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+
+.info p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.info a{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-left: 10rem;
+}
+
+
+.form-ultimo label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-left: 10rem;
+}
+
+.form-ultimo input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    border: 3px #A2A182 solid;
+    border-radius: 3px;
+    background: transparent;
+    padding: 5px;
+}
+
+.form-ultimo .mensaje{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+}
+.form-ultimo button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    background: transparent;
+    border: 3px #fff solid;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.form-ultimo button:hover{
+    background-color: #fff;
+    color: #A2A182;
+    font-weight: bold;
+}
+
+.barra-final{
+    width: 86rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.final h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 1.2rem;
+    margin-left: 6rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.todo-redes{
+    margin-top: 1rem;
+    margin-right: 8rem;
+}
+
+.redes{
+    margin-left: 1.5rem;
+}
+
+@media (max-width:522px){
+    .menu{
+        position:fixed;
+        width: 100%;
+        height: 150rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        background:#03045e;
+        left: 0;
+        top: 12rem;
+        z-index: 10;
+        padding-bottom: 42rem;
+     }
+     
+     li{
+         list-style: none;
+     }
+    
+     li >a{
+         text-decoration: none;
+         font-size: 6rem;
+         color: #fff;
+         font-family: 'Source Sans Pro', sans-serif;
+         font-weight: bold;
+     } 
+    
+     li a:hover{
+         color: #A2A182;
+         
+     }
+    
+     #barra-navegacion{
+         width: 90rem;
+        height: 12rem;
+        box-shadow: 0 .5rem 1rem rgba(12, 1, 1, 0.1);
+    }
+    
+    #logo{
+       width: 27rem;
+       padding: 2rem;
+    }
+    
+    .toogle{
+       transform: translate(100%);
+    }
+    
+    
+    .hamburguesa{
+       order: 2;
+       margin-top: 3rem;
+       visibility:visible;
+       margin-left: 44rem;
+    }
+    
+    .inicio{
+       margin-top: 25rem;
+    }
+    .domos{
+       margin-top: 10rem;
+    }
+    .servicio{
+       margin-top: 10rem;
+    }
+    .contacto{
+       margin-top: 10rem;
+       margin-bottom: 8rem;
+    }
+    
+    .reserva-btn{
+       margin-left: 2rem;
+       font-size: 6rem;
+       border: none; 
+    }
+
+    .titulo-domo h2{
+        width: 60rem;
+        font-size: 8rem;
+        margin-left: 15rem;
+        margin-top: -5rem;
+    }
+
+    .titulo-domo hr{
+        width: 19rem;
+        height: 0.5rem;
+        margin-left: 37rem;
+    }
+    .titulo-domo p{
+        width: 80rem;
+        font-size: 4rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+
+  .img-domo img{
+      margin-top: 6rem;
+      width: 75rem;
+      height: 60rem;
+  }
+
+  .part-uno{
+      margin-top: 1rem;
+      width: 75rem;
+      height: 70rem;
+      margin-left: 5rem;
+  }
+
+  .part-uno h4{
+      font-size: 6rem;
+      text-align: center;
+  }
+  .part-uno p{
+      font-size: 4rem;
+      padding: 2rem;
+  }
+
+  .rating img{
+    visibility: hidden;
+  }
+
+  .part-uno a{
+      width: 40rem;
+      height: 10rem;
+      border: 10px #A2A182 solid;
+      border-radius: 15px;
+      margin-left: 16rem;
+      font-size: 5rem;
+      background: #A2A182;
+      color: #fff;
+      text-align: center;
+  }
+
+  .tipos-dos .img-domo{
+      margin-top: -10rem;
+margin-left: -14rem;
+  }
+
+  .part-dos{
+      margin-top: 1rem;
+      width: 75rem;
+      height: 77rem;
+      margin-left: -9rem;
+  }
+
+  .part-dos h4{
+    width: 60rem;
+    font-size: 6rem;
+    margin-left: 14rem;
+    margin-top: -5rem;
+  }
+.part-dos p{
+    font-size: 4rem;
+      padding: 2rem;
+}
+
+.part-dos a{
+    width: 40rem;
+      height: 10rem;
+      border: 10px #A2A182 solid;
+      border-radius: 15px;
+      margin-left: 16rem;
+      font-size: 5rem;
+      background: #A2A182;
+      color: #fff;
+      text-align: center;
+}
+
+  .tipos-dos{
+      margin-top: 15rem;
+      margin-left: 15rem;
+  }
+
+  .tipos-tres .img-domo{
+    margin-top: 30rem;
+    margin-left: -44rem;
+  }
+
+  .tipos-tres .part-dos{
+      margin-left: -39rem;
+      margin-bottom: 10rem;
+  }
+
+  .pie-pagina{
+    width: 90rem;
+    height: 150rem;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.info h4{
+    margin-top: 4rem;
+    font-size: 5rem;
+}
+
+.info p{
+    font-size: 4rem;
+    line-height: 6rem;
+   
+}
+
+.info a{
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.info label{
+    font-size: 4rem;
+}
+
+.info input{
+    width: 50rem;
+    height: 10rem;
+    font-size: 4rem;
+    border: 7px #A2A182 solid;
+    border-radius: 10px;
+}
+
+.info .mensaje{
+    width: 50rem;
+    height: 10rem;
+}
+
+.info button{
+    width: 30rem;
+    height: 8rem;
+    font-size: 4rem;
+    border: 7px #fff solid;
+    margin-top: 2rem;
+}
+
+.final h2{
+    font-size: 5rem;
+}
+
+.redes img{
+    width: 8rem;
+}
+
+}

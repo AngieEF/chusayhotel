@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial -scale=1.0">
+        <title>Hotel Ch'usay - Reserva</title>
+        <link rel="stylesheet" href="contacto.css">
+        <link rel="icon" href="img/icon.png">
+    </head>
+
+<body>
+    <header>
+        <div id="barra-navegacion">
+              
+            <a class="logo" href="index.html"><img id="logo"src="img/hotel-chusay.png" width="150"></a>
+            <nav class="nav">
+                <ul class="menu" id="_menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="domos.html">Domos</a></li>
+                    <li><a href="servicios.html">Servicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a class="reserva-btn" href="reservar.html">Reservar</a></li>
+                </ul>
+                <div class="hamburguesa" id="_hamburguesa">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<!--seccion reservar-->
+
+<div class="seccion-reserva">
+    <div class="img-reserva">
+        <img src="https://i.pinimg.com/564x/45/50/64/4550640e3bd0c5dd572e8a8dfaaf6227.jpg">
+    </div>
+    <div class="reservar">
+        <h2>RESERVA AHORA</h2>
+        <div class="form-reserva">
+            <form class="formulario">
+                <div class="items">
+                    <label for="domo">Tipo de domo:</label><br>
+                    <input type="text" id="domo" placeholder="Ingrese el tipo de domo">
+                </div>
+
+                <div class="items">
+                    <label for="personas">Nro Personas:</label><br>
+                    <input type="number" id="nropersonas" placeholder="Ingrese la cantidad">
+                </div>
+
+                <div class="items">
+                    <label for="ingreso">Fecha de ingreso:</label><br>
+                    <input type="date" id="ingreso-fecha" placeholder="Ingrese la fecha de ingreso">
+                </div>
+
+                <div class="items">
+                    <label for="salida">Fecha de salida:</label><br>
+                    <input type="date" id="salida-fecha" placeholder="Ingrese la fecha de salida">
+                </div>
+                <div class="items">
+                    <button type="submit" id="enviar-reserva">RESERVAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+ <!--pie de pagina-->
+ <footer>
+    <div class="pie-pagina">
+        <div class="informacion">
+           <div class="info">
+               <h4>CONTÁCTANOS</h4>
+               <hr class="barra-footer1">
+               <p><strong>Email:</strong> hotelchusay@gmail.com</p>
+               <p><strong>Teléfono:</strong>  985 148 216</p>
+               <p><strong>Oficina: </strong> Av. Girasoles<br>
+               Los Olivos, Lima, Perú</p>
+           </div>
+   
+           <div class="info">
+               <h4>ENLACE</h4>
+               <hr class="barra-footer2">
+               <a href="index.html">Inicio</a><br>
+               <a href="domos.html">Domos</a><br>
+               <a href="servicios.html">Servicios</a><br>
+               <a href="contacto.html">Contacto</a><br>
+               <a href="reservar.html">Reserva</a>
+           </div>
+   
+           <div class="info">
+            <h4 class="ultimo">ESCRÍBENOS</h4>
+            <hr class="barra-footer3">
+            <form class="form-ultimo">
+                <label>Email:</label><br>
+                <input type="email" placeholder="Ingresa tu e-mail"><br>
+                <label>Mensaje:</label><br>
+                <input class="mensaje" type="text" placeholder="Ingresa tu mensaje"><br>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+        </div>
+       
+       <hr class="barra-final">
+       <div class="final">
+           <h2>Ch'usay Hotel</h2>
+           <div class="todo-redes">
+               <a class="redes" href=""><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" width="40"></a>
+               <a class="redes" href=""><img src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_640.png" width="40"></a>
+               <a class="redes" href=""><img src="https://icones.pro/wp-content/uploads/2021/02/youtube-icone.png" width="40"></a>
+           </div>
+          
+       </div>
+    </div>
+   </footer>
+   
+   <script src="menu.js"></script>
+</body>
+</html>

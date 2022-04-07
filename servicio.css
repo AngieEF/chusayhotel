@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@700&family=Source+Sans+Pro:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    box-shadow: 0 .5rem 1rem rgba(12, 1, 1, 0.1);
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.nav{
+    margin-right: 5rem;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+li{
+    list-style: none;
+}
+li >a{
+    margin: 30px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #A2A182;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+li >a:hover{
+    font-weight: bolder;
+    color: #000;
+}
+
+.reserva-btn{
+   margin-left: 9rem;
+   font-size: 22px;
+   padding: 0.4rem 0.8rem;
+   border:3px #A2A182 solid;
+   border-radius: 4px;
+ }
+ 
+ .reserva-btn:hover{
+     background-color: #A2A182;
+     border: 3px #A2A182 solid;
+     color: #fff;
+ }
+ .hamburguesa{
+    visibility:hidden;
+    height: 2px;
+}
+
+ .servicios-actividades{
+     width: 100%;
+     height: 30rem;
+     background-color: #edf2f8;
+ }
+ .servicios-actividades img{
+     width: 25rem;
+    margin-left: 10rem;
+    margin-top: 7rem;
+    box-shadow: 28px -28px 1px #8e9aaf;
+}
+ .texto h2{
+     font-family: 'Source Sans Pro', sans-serif;
+     margin-left: 35rem;
+     font-size: 2.2rem;
+     margin-top: -17rem;
+     margin-bottom: 1rem;
+     text-transform: uppercase;
+     text-align: center;
+     color: #0a1128;
+ }
+
+ .texto p{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: 50rem;
+     font-size: 1.3rem;
+     margin-right: 10rem;
+     margin-top: 2rem;
+ }
+
+ .servicios-titulo h2{
+     font-family: 'Source Sans Pro', sans-serif;
+     margin-top: 5rem;
+     text-align: center;
+     font-size: 2.3rem;
+     text-transform: uppercase;
+     color: #0a1128;
+ }
+
+ .servicios-titulo hr{
+     width: 10rem;
+     height: 3px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0.5rem;
+     background-color: #A2A182;
+     margin-bottom: 3rem;
+ }
+
+.servicios-chusay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ .servicios-chusay .img-servicios{
+    position: relative;
+    overflow: hidden;
+    margin-left: 5rem;
+    margin-right: 3.5rem;
+    
+ }
+
+ .img-dos{
+     margin-right: 0rem;
+ }
+
+
+.img-servicios img{
+    width: 100%;
+    height: 70%;
+    transition: all 400ms ease-in 0s;
+    border: 7px #8e9aaf solid;
+}
+
+.img-servicios:hover img{
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.img-servicios::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    margin-left: 0rem;
+    background-color: #000;
+    opacity: 0;
+    z-index: 1;
+    transition: all 400ms ease-in 0s;
+}
+
+.img-servicios:hover::before{
+    opacity: 0.5;
+}
+
+.imagen-descrip{
+    position: absolute;
+    left: 1.875rem;
+    right: 1.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.img-servicios .descripcion{
+    border: 3px solid #A2A182;
+    padding: 3rem 1.875rem;
+    transform: scale3d(1, 1, 1);
+    transition: all 500ms ease-in 0s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-servicios:hover .descripcion{
+    opacity: 1;
+    transform: scale3d(1.0,2.3,1.0);
+}
+
+.img-servicios img{
+    width: 23rem;
+    height: 27rem;
+    margin-bottom: 2rem;
+}
+
+.img-servicios .descripcion{
+  
+    width: 100%;
+    height: 100%;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.descripcion h5{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color:#fff;
+
+}
+
+.descripcion p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+
+/*actividades*/
+
+.actividades-titulo h2{
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: 2.3rem;
+    margin-top: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0a1128;
+}
+
+.actividades-titulo hr{
+    width: 10rem;
+    height: 3px;
+    margin-top: 1rem;
+    margin-left: 42rem;
+    margin-bottom: 4rem;
+    background-color: #A2A182;
+}
+
+.todo-actividades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ .actividades-chusay .img-actividades{
+    position: relative;
+    overflow: hidden;
+    margin-left: 5rem;
+    margin-right: 3.5rem;
+    
+ }
+
+ /*.img-dos{
+     margin-right: 0rem;
+ }*/
+
+
+.img-actividades img{
+    border: 7px #8e9aaf solid;
+    width: 100%;
+    height: 70%;
+    transition: all 400ms ease-in 0s;
+}
+
+.img-actividades:hover img{
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.img-actividades::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    margin-left: 0rem;
+    background-color: #000;
+    opacity: 0;
+    z-index: 1;
+    transition: all 400ms ease-in 0s;
+}
+
+.img-actividades:hover::before{
+    opacity: 0.5;
+}
+
+.img-descrip{
+    position: absolute;
+    left: 1.875rem;
+    right: 1.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.img-actividades .descripcion-acti{
+    border: .125rem solid pink;
+    padding: 3rem 1.875rem;
+    transform: scale3d(1, 1, 1);
+    transition: all 500ms ease-in 0s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.img-actividades:hover .descripcion-acti{
+    opacity: 1;
+    transform: scale3d(1.0,2.3,1.0);
+}
+
+.img-actividades img{
+    width: 23rem;
+    height: 27rem;
+    margin-bottom: 2rem;  
+}
+
+.descripcion-acti h5{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color:#fff;
+
+}
+
+.descripcion-acti p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+
+/*sobre nosotros*/
+#sobre-nosotros{
+    background-image: url("img/terra_11-scaled\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+
+#sobre-nosotros .about{
+    background: #8e9aaf;
+    padding: 50px;
+    width: 35%;
+    height: 600px;
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    padding-top: 10%;
+}
+
+#sobre-nosotros h2{
+    font-family: 'Source Sans Pro'; 
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: -70px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#sobre-nosotros hr{
+    width: 6rem;
+    height: 0.2rem;
+    background-color: #A2A182;
+    margin-left: 0.3rem;
+    border-color: none;
+    
+}
+
+#sobre-nosotros p{
+    margin-top: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.estrellas{
+    margin-top: 2rem;
+    margin-left: 9rem;
+}
+.estrella{
+    width: 25px;
+ 
+}
+
+
+/* FOOTER*/
+.pie-pagina{
+    width: 100%;
+    height: 25rem;
+    background-color: #0a1128;
+    
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info h4{
+    font-family: 'Livvic', sans-serif;
+    color: #fff;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.info .ultimo{
+    margin-right: 14rem;
+}
+
+.barra-footer1{
+    background-color: #A2A182;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.barra-footer2{
+    background-color: #A2A182;
+    width: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.barra-footer3{
+    background-color: #A2A182;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+
+.info p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.info a{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-left: 10rem;
+}
+
+
+.form-ultimo label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-left: 10rem;
+}
+
+.form-ultimo input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    border: 3px #A2A182 solid;
+    border-radius: 3px;
+    background: transparent;
+    padding: 5px;
+}
+
+.form-ultimo .mensaje{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+}
+.form-ultimo button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    background: transparent;
+    border: 3px #fff solid;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.form-ultimo button:hover{
+    background-color: #fff;
+    color: #A2A182;
+    font-weight: bold;
+}
+
+.barra-final{
+    width: 86rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.final h2{
+    font-family: 'Source Sans Pro';
+    margin-top: 1.2rem;
+    margin-left: 6rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.todo-redes{
+    margin-top: 1rem;
+    margin-right: 8rem;
+}
+
+.redes{
+    margin-left: 1.5rem;
+}
+
+@media (max-width:552px){
+    .menu{
+        position:fixed;
+        width: 100%;
+        height: 150rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        background:#03045e;
+        left: 0;
+        top: 12rem;
+        z-index: 10;
+        padding-bottom: 42rem;
+     }
+     
+     li{
+         list-style: none;
+     }
+    
+     li >a{
+         text-decoration: none;
+         font-size: 6rem;
+         color: #fff;
+         font-family: 'Source Sans Pro', sans-serif;
+         font-weight: bold;
+     } 
+    
+     li a:hover{
+         color: #A2A182;
+         
+     }
+    
+     #barra-navegacion{
+        height: 12rem;
+        width: 90rem;
+        box-shadow: 0 .5rem 1rem rgba(12, 1, 1, 0.1);
+    }
+    
+    #logo{
+       width: 27rem;
+       padding: 2rem;
+    }
+    
+    .toogle{
+       transform: translate(100%);
+    }
+    
+    
+    .hamburguesa{
+       order: 2;
+       margin-top: 3rem;
+       visibility:visible;
+       margin-left: 44rem;
+    }
+    
+    .inicio{
+       margin-top: 25rem;
+    }
+    .domos{
+       margin-top: 10rem;
+    }
+    .servicio{
+       margin-top: 10rem;
+    }
+    .contacto{
+       margin-top: 10rem;
+       margin-bottom: 8rem;
+    }
+    
+    .reserva-btn{
+       margin-left: 2rem;
+       font-size: 6rem;
+       border: none;
+    }
+
+    .servicios-actividades{
+width: 90rem;
+height: 130rem;
+    }
+
+    .servicios-actividades img{
+        margin-top: 10rem;
+        width: 65rem;
+    }
+
+    .texto h2{
+        margin-top: 7rem;
+        font-size: 6rem;
+        width: 70rem;
+        margin-left: 8rem;
+    }
+
+    .texto p{
+        margin-left: 8rem;
+        font-size: 4rem;
+        padding: 2rem;
+    }
+    
+    .servicios-titulo h2{
+        font-size: 6rem;
+        width: 70rem;
+        margin-left: 7rem;
+    }
+
+    .servicios-titulo hr{
+        height: 0.5rem;
+        width: 15rem;
+        margin-left: 35rem;
+    }
+
+    .servicios-chusay{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80rem;
+        
+    }
+
+ .img-servicios img{
+     width: 80rem;
+     height: 90rem;
+     margin: 2rem;
+ }
+
+ .descripcion h5{
+font-size: 4rem;
+text-align: center;
+ }
+
+ .descripcion p{
+     font-size: 3rem;
+ }
+
+ .actividades-titulo h2{
+    margin-top: 5rem;
+    font-size: 6rem;
+    width: 70rem;
+    margin-left: 7rem;
+ }
+
+ .actividades-titulo hr{
+    width: 20rem;
+    height: 0.5rem;
+    margin-left: 35rem;
+ }
+
+ .todo-actividades{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 80rem;
+ }
+
+ .img-actividades img{
+     width: 80rem;
+     height: 90rem;
+     margin: 2rem;
+ }
+
+ .img-descrip h5{
+    font-size: 4rem;
+    text-align: center;
+ }
+
+ .img-descrip p{
+     font-size: 3rem;
+ }
+
+
+/*sobre nosotros*/
+
+#sobre-nosotros{
+    background-image: url("img/terra_11-scaled\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90rem;
+    height: 140rem;
+    position: relative;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+
+#sobre-nosotros .about{
+    background: #8e9aaf;
+    padding: 50px;
+    width: 70rem;
+    height: 110rem;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding-top: 10%;
+    margin-left: 5rem;
+}
+
+#sobre-nosotros h2{
+    font-family: 'Source Sans Pro'; 
+    color: #fff;
+    font-size: 6rem;
+    margin-top: -70px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#sobre-nosotros hr{
+    width: 15rem;
+    height: 0.8rem;
+    background-color: #A2A182;
+    margin-left: 0.3rem;
+    border-color: none;
+    
+}
+
+#sobre-nosotros p{
+    margin-top: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 5rem;
+    line-height: 6rem;
+    text-align: center;
+}
+
+
+.estrellas{
+    margin-top: 4rem;
+    margin-left: 17rem;
+}
+.estrella{
+    width: 6rem;
+ 
+}
+
+ .pie-pagina{
+     margin-top: 4rem;
+    width: 90rem;
+    height: 150rem;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.info h4{
+    margin-top: 4rem;
+    font-size: 5rem;
+}
+
+.info p{
+    font-size: 4rem;
+    line-height: 6rem;
+   
+}
+
+.info a{
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.info label{
+    font-size: 4rem;
+}
+
+.info input{
+    width: 50rem;
+    height: 10rem;
+    font-size: 4rem;
+    border: 7px #A2A182 solid;
+    border-radius: 10px;
+}
+
+.info .mensaje{
+    width: 50rem;
+    height: 10rem;
+}
+
+.info button{
+    width: 30rem;
+    height: 8rem;
+    font-size: 4rem;
+    border: 7px #fff solid;
+    margin-top: 2rem;
+}
+
+.final h2{
+    font-size: 5rem;
+}
+
+.redes img{
+    width: 8rem;
+}
+
+}
+
+
+
+
+
+    
+
+
+
+

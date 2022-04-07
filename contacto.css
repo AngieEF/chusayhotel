@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@700&family=Source+Sans+Pro:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    box-shadow: 0 .5rem 1rem rgba(12, 1, 1, 0.1);
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.nav{
+    margin-right: 5rem;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+li{
+    list-style: none;
+}
+li >a{
+    margin: 30px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #A2A182;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: bold;
+}
+
+li >a:hover{
+    font-weight: bolder;
+    color: #000;
+}
+
+.reserva-btn{
+   margin-left: 9rem;
+   font-size: 22px;
+   padding: 0.4rem 0.8rem;
+   border:3px #A2A182 solid;
+   border-radius: 4px;
+ }
+ 
+ .reserva-btn:hover{
+     background-color: #A2A182;
+     border: 3px #A2A182 solid;
+     color: #fff;
+ }
+
+ .hamburguesa{
+    visibility:hidden;
+    height: 2px;
+}
+ .fondo{
+     width: 100%;
+     height: 36rem;
+     background-image:  url("img/contacto.png");
+     background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 8rem;
+ }
+
+ .fondo .formulario{
+     margin-top: 2rem;
+    background: #dce2eb;
+    padding: 30px;
+    width: 35%;
+    height: 630px;
+    position: absolute;
+    left: 5%;
+    
+ }
+ .formulario h3{
+     font-family: 'Source Sans Pro', sans-serif;
+     text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    color: #A2A182;
+ }
+
+ .formulario hr{
+     width: 5rem;
+     height: 1rem;
+     background-color: #A2A182;
+     margin-left: 11rem;
+     margin-bottom: 1rem;
+ }
+
+ .form-seccion #nombre,
+ #numero, #correo{
+     margin-top: 0.5rem;
+     width: 65%;
+     height: 3rem;
+     background-color: #fff;
+     border-radius: 3px;
+     border: 3px #fff solid;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 1rem;
+     margin-left: 5rem;
+     padding: 1rem;
+     margin-bottom: 1rem;
+
+ }
+
+ .form-seccion #mensaje{
+     margin-top: 1rem;
+     width: 65%;
+     height: 6rem;
+     background-color: #fff;
+     border-radius: 3px;
+     border: 3px #fff solid;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 1rem;
+     margin-left: 5rem;
+     padding: 1rem;
+ }
+
+ 
+ .form-seccion input:focus{
+     outline:0;
+ }
+/*.form-seccion i.fa-circle-exclamation{
+   right: 2rem;
+   position: relative;
+   color: red;
+}*/
+
+.form-seccion .fa-solid{
+    position: absolute;
+    display: none;  
+}
+
+.form-seccion .iconos i{
+   margin-top: -3rem;
+   margin-left: 22.5rem;
+}
+
+.form-seccion .iconodos i{
+    margin-top: -3rem;
+    margin-left: 22.5rem;
+ }
+
+ .form-seccion .iconotres i{
+    margin-top: -3rem;
+    margin-left: 22.5rem;
+ }
+
+ .form-seccion .iconocuatro i{
+    margin-top: -3.5rem;
+    margin-left: 22.5rem;
+ }
+ 
+
+.fa-circle-exclamation{
+    color: red; 
+}
+.fa-circle-check{
+    color: green;
+}
+
+
+#error{
+    color: red;
+}
+
+.form-seccion .form-label{
+    margin-left: 5rem;
+    color: #0a1128;
+    margin-bottom: -3rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+ .form-seccion #enviar{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+     margin-top: 1rem;
+     width: 40%;
+     height: 3rem;
+     background-color: #A2A182;
+     border-radius: 3px;
+     margin-left: 8rem;
+     border: 3px  #EEE2DF solid;
+     color: #fff;
+ }
+
+ .form-seccion #enviar:hover{
+    background-color: #0a1128;
+    color: #fff;
+ }
+
+ /* pagina reserva*/
+
+ .img-reserva img{
+     width: 85%;
+     height: 35rem;
+     margin-top: 4rem;
+     margin-left: 12rem;
+     box-shadow: -30px 30px 1px #8e9aaf;
+     margin-bottom: 4rem;
+ }
+
+ .seccion-reserva{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .reservar{
+     margin-top: 4rem;
+     margin-left: 0rem;
+     margin-right: 22rem;    
+ }
+
+ .reservar h2{
+     font-family:  'Source Sans Pro', sans-serif;
+     margin-bottom: 2rem;
+     font-size: 2.2rem;
+     color: #0a1128;
+ }
+
+ .form-reserva label{
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 1.1rem;
+     font-weight: bold;
+     color: #0a1128;
+ }
+
+ .form-reserva input{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px #8e9aaf solid;
+    border-radius: 3px;
+    font-size: 1rem;
+ }
+ .form-reserva label, input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+ }
+
+ .items input{
+     width: 18rem;
+     height: 3rem;
+     padding: 1rem;
+ }
+
+ .items button{
+     width: 10rem;
+     height: 2.8rem;
+     border-radius: 3px;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 1.2rem;
+     font-weight: bold;
+     border: 2px #A2A182 solid;
+     background-color: #A2A182;
+     color: #fff;
+     margin-left: 4rem;
+     margin-top: 0.5rem;
+ }
+
+ .items button:hover{
+     background-color: #0a1128;
+     border: 3px #0a1128 solid;
+ }
+
+ .form-ultimo label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-left: 10rem;
+}
+
+.form-ultimo input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    border: 3px #A2A182 solid;
+    border-radius: 3px;
+    background: transparent;
+    padding: 5px;
+}
+
+.form-ultimo .mensaje{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+}
+.form-ultimo button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    background: transparent;
+    border: 3px #fff solid;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.form-ultimo button:hover{
+    background-color: #fff;
+    color: #A2A182;
+    font-weight: bold;
+}
+
+
+/* FOOTER*/
+.pie-pagina{
+    width: 100%;
+    height: 26rem;
+    background-color: #0a1128;
+    
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info h4{
+    font-family: 'Livvic', sans-serif;
+    color: #fff;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.info .ultimo{
+    margin-right: 14rem;
+}
+
+.barra-footer1{
+    background-color: #A2A182;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.barra-footer2{
+    background-color: #A2A182;
+    width: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.barra-footer3{
+    background-color: #A2A182;
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+
+.info p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.info a{
+    font-family:'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5rem;
+    margin-left: 10rem;
+}
+
+
+.form-ultimo label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-left: 10rem;
+}
+
+.form-ultimo input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    border: 3px #A2A182 solid;
+    border-radius: 3px;
+    background: transparent;
+    padding: 5px;
+}
+
+.form-ultimo .mensaje{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12rem;
+    height: 3rem;
+    color: #fff;
+}
+.form-ultimo button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    background: transparent;
+    border: 3px #fff solid;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.form-ultimo button:hover{
+    background-color: #fff;
+    color: #A2A182;
+    font-weight: bold;
+}
+
+.barra-final{
+    width: 86rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.final h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 1.2rem;
+    margin-left: 6rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.todo-redes{
+    margin-top: 1rem;
+    margin-right: 8rem;
+}
+
+.redes{
+    margin-left: 1.5rem;
+}
+
+
+
+@media (max-width:522px){
+    .menu{
+        position:fixed;
+        width: 100%;
+        height: 150rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        background:#03045e;
+        left: 0;
+        top: 12rem;
+        z-index: 10;
+        padding-bottom: 42rem;
+     }
+     
+     li{
+         list-style: none;
+     }
+    
+     li >a{
+         text-decoration: none;
+         font-size: 6rem;
+         color: #fff;
+         font-family: 'Source Sans Pro', sans-serif;
+         font-weight: bold;
+     } 
+    
+     li a:hover{
+         color: #A2A182;
+         
+     }
+    
+     #barra-navegacion{
+         width: 90rem;
+        height: 12rem;
+        box-shadow: 0 .5rem 1rem rgba(12, 1, 1, 0.1);
+    }
+    
+    #logo{
+       width: 27rem;
+       padding: 2rem;
+    }
+    
+    .toogle{
+       transform: translate(100%);
+    }
+    
+    
+    .hamburguesa{
+       order: 2;
+       margin-top: 3rem;
+       visibility:visible;
+       margin-left: 44rem;
+    }
+    
+    .inicio{
+       margin-top: 25rem;
+    }
+    .domos{
+       margin-top: 10rem;
+    }
+    .servicio{
+       margin-top: 10rem;
+    }
+    .contacto{
+       margin-top: 10rem;
+       margin-bottom: 8rem;
+    }
+    
+    .reserva-btn{
+       margin-left: 2rem;
+       font-size: 6rem;
+       border: none;
+    }
+
+    .fondo{
+        width: 90rem;
+        height: 90rem;
+    }
+
+    .fondo .formulario{
+        width: 70rem;
+        height: 100rem;
+        margin: 7rem;
+    }
+    
+
+    .formulario h3{
+        font-size: 6rem;
+    }
+
+    .formulario hr{
+        width: 15rem;
+        height: 0.5rem;
+        margin-left: 24rem;
+    }
+
+    .form-seccion #nombre,
+    #numero, #correo{
+        width: 60rem;
+        height: 12rem;
+        border: 8px #8e9aaf solid;
+        border-radius: 17px;
+        margin-left: 2rem;
+        font-size: 4rem;
+    }
+
+    
+
+    .form-seccion #mensaje{
+        width: 60rem;
+        height: 22rem;
+        border: 8px #8e9aaf solid;
+        border-radius: 17px;
+        margin-left: 2rem;
+        font-size: 4rem;
+    }
+
+    .form-seccion #enviar{
+        width: 40rem;
+        height: 10rem;
+        border: 10px #fff solid;
+        font-size: 4rem;
+        border-radius: 13px;
+        margin-left: 10rem;
+        margin-top: 4rem;
+    }
+
+    .form-seccion #enviar:hover{
+        background: #0a1128;
+    }
+
+    .pie-pagina{
+        margin-top: 24rem;
+        width: 90rem;
+        height: 150rem;
+    }
+    
+    .informacion{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .info h4{
+        margin-top: 4rem;
+        font-size: 5rem;
+    }
+    
+    .info p{
+        font-size: 4rem;
+        line-height: 6rem;
+       
+    }
+    
+    .info a{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    
+    .info label{
+        font-size: 4rem;
+    }
+    
+    .info input{
+        width: 50rem;
+        height: 10rem;
+        font-size: 4rem;
+        border: 7px #A2A182 solid;
+        border-radius: 10px;
+    }
+    
+    .info .mensaje{
+        width: 50rem;
+        height: 10rem;
+    }
+    
+    .info button{
+        width: 30rem;
+        height: 8rem;
+        font-size: 4rem;
+        border: 7px #fff solid;
+        margin-top: 2rem;
+    }
+    
+    .final h2{
+        font-size: 5rem;
+    }
+    
+    .redes img{
+        width: 8rem;
+    }
+    
+    /*seccion reserva*/
+
+    .img-reserva{
+        visibility: hidden;
+    }
+
+    .reservar h2{
+        margin-top: 4rem;
+        width: 70rem;
+        font-size: 8rem;
+        margin-left: 4rem;
+        margin-bottom: 5rem;
+    }
+    .form-reserva label{
+    font-size: 4rem;
+    margin: 2rem;
+    }
+
+    .form-reserva input{
+        width: 55rem;
+        height: 10rem;
+        font-size: 3rem;
+        border: 6px #8e9aaf solid;
+        border-radius: 10px;
+        margin: 2rem;
+    }
+
+    .form-reserva button{
+        width: 40rem;
+        height: 10rem;
+        font-size: 4rem;
+        border-radius: 10px;
+        margin-left: 10rem;
+        margin-top: 3rem;
+    }
+
+}
+

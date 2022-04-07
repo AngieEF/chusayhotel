@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--etiqueta para codificar los caracteres-->
+        <meta charset="UTF-8">
+        <!--etiqueta para definir la escala del sitio web-->
+        <meta name="viewport" content="width=device-width, initial -scale=1.0">
+        <!--titulo del navegador-->
+        <title>Hotel Ch'usay</title>
+        <!--etiqueta de descripcion del sitio web-->
+        <meta name="description" content="Hotel Ch'usay, habitaciones con domos panoramicos">
+        <!--etiqueta para palabras claves para el buscador-->
+        <meta name="keywords" content="hotel glamping peru, domos panoramicos, domos en lima,
+                                       hotel chusay, turismo rural, hotel rustico,
+                                       servicios chusay, actividades chusay, acampar en lima
+                                       acampar en domos, habitaciones con domos">                
+        <!--etiqueta de propietario-->
+        <meta name="author" content="Angie Espiritu">
+        <!--enlace a la hoja de estilo-->
+        <link rel="stylesheet" href="style.css">
+        <!--favicon del sitio web-->
+        <link rel="icon" href="img/icon.png">
+        <!--enlace a la libreria animate.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+<body>
+        <header>
+            <div id="primera-seccion-menu">
+            <div id="barra-navegacion">
+            <a class="logo" href=""><img id="logo" src="img/hotel-logo-2.png" width="170"> </a>
+            <nav class="nav">
+                <ul class="menu" id="_menu">
+                    <li class="inicio"><a href="index.html">Inicio</a></li>
+                    <li class="domos"><a href="domos.html">Domos</a></li>
+                    <li class="servicio"><a href="servicios.html">Servicio</a></li>
+                    <li class="contacto"><a href="contacto.html">Contacto</a></li>
+                    <li class="rese"><a class="reserva-btn" href="reservar.html">Reservar</a></li>
+                </ul>
+                <div class="hamburguesa" id="_hamburguesa">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="100" height="100" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </span>
+                </div>
+            </nav>
+        </div>
+        <div id="hero">
+            <h1 class="animate__animated animate__backInDown">CH'USAY HOTEL GLAMPING</h1>
+            <h2 class="animate__animated animate__backInDown">Domos Panorámicos</h2>
+            <a href="domos.html" class="btn-verdomo">VER DOMOS</a>
+        </div>
+        </div>
+    </header>
+
+
+    <!--formulario de reserva-->
+    <div id="segunda-seccion">
+        <div class="reserva">
+            <form class="book-form">
+                <div class="form-item">
+                <label for="ingreso">Fecha de ingreso:</label><br>
+                <input type="date" id="feingreso">
+                </div>
+
+                <div class="form-item">
+                    <label for="salida">Fecha de salida:</label><br>
+                    <input type="date" id="fesalida">
+                    </div>
+
+                <div class="form-item">
+                    <label for="adultos">Adultos:</label><br>
+                    <input type="number" min="1" max="4" value="1" id="nradultos">
+                </div>
+
+                <div class="form-item">
+                    <label for="niños">Niños:</label><br>
+                    <input type="number" min="1" max="3"value="1" id="nrniños">
+                </div>
+
+                <div class="form-item">
+                    <a class="btn-buscar" href="">BUSCAR</a>
+                </div>
+            </form>
+        </div>
+
+        <!--comodidades-->
+        <div class="form-comodidades">
+            <h2>Tu reserva incluye</h2>
+            <hr>
+            <div class="seccion-comodidades">
+                <div class="comodidades">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3313/3313659.png" width="60">
+                    <h3 class="como1">Internet</h3>
+                </div>
+    
+                <div class="comodidades">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3313/3313631.png" width="60">
+                    <h3  class="como2">Comedor</h3>
+                </div>
+    
+                <div class="comodidades">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3313/3313618.png" width="60">
+                    <h3  class="como3">Electricidad</h3>
+                </div>
+    
+                <div class="comodidades">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3313/3313555.png" width="60">
+                    <h3  class="como4">Servicio 24h</h3>
+                </div>
+    
+                <div class="comodidades">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3313/3313576.png" width="60">
+                    <h3  class="como5">Restaurante</h3>
+                </div>
+           </div>
+        </div>    
+        </div>
+       
+    <!--bienvenida-->
+    <div id="tercera-seccion">
+        <div class="bienvenida">
+            <h2>BIENVENIDOS AL HOTEL CH'USAY</h2>
+            <h3>Somos una empresa hotelera llamada "Ch'usay" que nació<br> a raíz de la necesidad de innovar</h3>
+            <hr>
+            <p>Es un placer darle la bienvenida y contarles sobre<br> nuestros servicios que tenemos para tí.<br>
+                Contamos con una variedad de domos panorámicos <br>
+                según sus necesidades, continua visitando nuestra<br> página para encontrar los planes y servicios que deseas. 
+            </p>
+            <a class="masinfo" href="servicios.html">LEER MÁS</a>
+        </div>
+        <div class="bienvenida-img">
+            <img src="https://i.pinimg.com/564x/6d/17/76/6d17768e5a2ad4a3319b19511bc61471.jpg">
+        </div>
+    </div>
+
+    <!--experiencia distinta-->
+    <div id="cuarta-seccion">
+        <div class="titulo">
+            <h2>VIVE UNA EXPERIENCIA DISTINTA</h2>
+            <hr>
+            <p>Cuando viajamos nos encanta 
+                disfrutar de la natulareza y  
+                en muchos casos 
+                hacer camping no es muy cómodo. <br>
+                Ahora gracias a <strong>Ch’usay</strong> 
+                puedes disfrutar de domos panorámicos ofreciéndote una experiencia única y exclusiva.</p>
+                <div class="estrellas">
+                    <img  class="estrella" src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" >
+                    <img class="estrella"  src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" >
+                    <img  class="estrella" src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png">
+                    <img  class="estrella" src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png" >
+                    <img  class="estrella" src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png">
+                </div>
+                <a class="domosmas" href="domos.html">VER DOMOS</a>
+        </div>
+    </div>
+
+    <!--galeria-->
+    <div id="quinta-seccion">
+        <div class="galeria-chusay">
+            <h2>GALERÍA CH'USAY</h2>
+            <hr class="galeria-barra">
+            <div class="galeria">
+                <a href="#image1" class="img-chusay">
+                    <img src="https://i.pinimg.com/736x/ae/99/dd/ae99dd3679601364a25d40647a4c8d37.jpg" width="285">
+                </a>
+                <a href="#image2" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/96/7f/85/967f858f9c05090c29e90147f1eef1bd.jpg" width="480">
+                </a>
+                <a href="#image3" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/42/b3/23/42b323092c2c10fd83f6cd3d4d033740.jpg" width="280">
+                </a>
+                <a href="#image4" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/0e/5c/e4/0e5ce4741c5c99a11c60c7409288c9c8.jpg" width="290">
+                </a>
+                <a href="#image5" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/30/91/d3/3091d3d1140e7c821e89344b5d14c4ca.jpg" width="290">
+                </a>
+                <a href="#image6" class="img-chusay">
+                    <img src="https://www.quechuasperuviajes.com/wp-content/uploads/2017/10/Salkantay-Humantay-Sky-Lodge-Dome-2-Days-Quechuas-Expeditions-4.jpg" width="420">
+                </a>
+                <a href="#image7" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/a2/a9/a6/a2a9a6492617bf0ed26c9ec63b8b2432.jpg" width="350">
+                </a>
+                <a href="#image8" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/5f/4f/4c/5f4f4c1fe16d972cb0e45928f9070c55.jpg" width="320">
+                </a>
+                <a href="#image9" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/f3/d0/a1/f3d0a10a7d0d1a54a488055ef55d7d86.jpg" width="290">
+                </a>
+                <a href="#image10" class="img-chusay">
+                    <img src="https://i.pinimg.com/564x/46/81/51/4681510c1e96410d8e808a63da6e5164.jpg" width="300">
+                </a>
+            </div>
+
+            <article class="ligth-box" id="image1">
+                <a href="#image10" class="next"><img class="arrow" src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/736x/ae/99/dd/ae99dd3679601364a25d40647a4c8d37.jpg">
+                <a href="#image2" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png" ></a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image2">
+                <a href="#image1" class="next"><img class="arrow" src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/96/7f/85/967f858f9c05090c29e90147f1eef1bd.jpg">
+                <a href="#image3" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"></a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image3">
+                <a href="#image2" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/42/b3/23/42b323092c2c10fd83f6cd3d4d033740.jpg">
+                <a href="#image4" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image4">
+                <a href="#image3" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/0e/5c/e4/0e5ce4741c5c99a11c60c7409288c9c8.jpg">
+                <a href="#image5" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image5">
+                <a href="#image4" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/30/91/d3/3091d3d1140e7c821e89344b5d14c4ca.jpg">
+                <a href="#image6" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image6">
+                <a href="#image5" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://www.quechuasperuviajes.com/wp-content/uploads/2017/10/Salkantay-Humantay-Sky-Lodge-Dome-2-Days-Quechuas-Expeditions-4.jpg">
+                <a href="#image7" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image7">
+                <a href="#image6" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/a2/a9/a6/a2a9a6492617bf0ed26c9ec63b8b2432.jpg">
+                <a href="#image8" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image8">
+                <a href="#image7" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/5f/4f/4c/5f4f4c1fe16d972cb0e45928f9070c55.jpg">
+                <a href="#image9" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image9">
+                <a href="#image8" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/f3/d0/a1/f3d0a10a7d0d1a54a488055ef55d7d86.jpg">
+                <a href="#image10" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+
+            <article class="ligth-box" id="image10">
+                <a href="#image9" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271218.png"></a>
+                <img src="https://i.pinimg.com/564x/46/81/51/4681510c1e96410d8e808a63da6e5164.jpg">
+                <a href="#image1" class="next"><img src="https://cdn-icons-png.flaticon.com/512/271/271226.png"> </a>
+                <a href="#quinta-seccion" class="close">x</a>
+            </article>
+        </div>
+    </div>
+
+    <!--que ofrecemos-->
+    <div id="sexta-seccion">
+        <div class="ofrecemos">
+            <h3>¿QUÉ OFRECEMOS?</h3>
+            <hr class="barra-bene">
+    <div class="beneficios-chusay">
+    <div class="tres-beneficios">
+        <div class="img-bene">
+            <img class="dinero" src="https://cdn-icons-png.flaticon.com/512/1611/1611179.png">
+        </div>
+        <div class="beneficios">
+            <h6>PRECIO JUSTO</h6>
+            <p>Contamos con domos
+                y servicios<br> desde el 
+                alcanze de su bolsillo. </p>
+                <img src="https://dnb2eg0emsxdz.cloudfront.net/cdn/13/images/recepcionista-de-hotel_l_primaria_1.jpg">
+        </div>
+    </div>
+    
+    <div class="tres-beneficios">
+        <div class="img-bene">
+            <img src="https://cdn-icons-png.flaticon.com/512/2370/2370264.png">
+        </div>
+        <div class="beneficios">
+            <h6>EXPERIENCIA</h6>
+            <p>Te ofrecemos la mejor <br>
+                y unica experiencia de 
+                viaje. </p>
+                <img src="https://i.pinimg.com/564x/69/d8/f8/69d8f87e1744cd4be3cf43874a40bb21.jpg">
+        </div>
+    </div>
+    
+    <div class="tres-beneficios">
+        <div class="img-bene">
+            <img src="https://cdn-icons-png.flaticon.com/512/2664/2664547.png">
+        </div>
+        <div class="beneficios">
+            <h6>MODERNIDAD</h6>
+            <p>Cada domo cuenta con <br>
+                la modernidad adecuada. </p>
+                <img src="https://i.pinimg.com/564x/de/87/9f/de879f13c5baaa8d472b99e8c6fa6d9d.jpg">
+        </div>
+    </div>
+</div>      
+        </div>
+    </div>
+
+    <!--experiencias-->
+    <div id="septima-seccion">
+        <div class="experiencias">
+            <h2>EXPERIENCIAS VIVIDAS</h2>
+            <p>Comentarios de nuestros clientes que visitaron Ch’usay </p>
+        <hr class="barra-experiencia"></div>
+        <div class="grupo-personas">
+            <div class="personas">
+                <h3>Sofia Vazquéz</h3>
+                <p>Me encantó el lugar<br> y 
+                    la atención. <br>
+                    En las noches puedes <br>
+                    ver las estrellas y <br>
+                    desconectarte de la cuidad.</p>
+                <div class="calificacion">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                </div>
+                <div class="img-persona">
+                    <img src="https://cdn2.salud180.com/sites/default/files/styles/medium/public/field/image/2020/03/estas_son_las_caracteristicas_que_vuelven_a_una_mujer_irresistible_segun_ellos.jpg">
+                </div>
+            </div>
+    
+            <div class="personas">
+                <h3>Gabriel Pérez</h3>
+                <p>Una experiencia distinta <br>
+                    y sin duda volvería a ir. <br>
+                    Mucha adrenalina con sus <br>
+                    deportes de aventura <br>y buena atención.</p>
+                <div class="calificacion">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                </div>
+                <div class="img-persona">
+                    <img src="https://media.istockphoto.com/photos/some-moments-require-some-seriousness-picture-id1174056245?b=1&k=6&m=1174056245&s=612x612&w=0&h=nNXJerhZdbAHd5dwRmxVxKvlWInI_sq6w3xe5Px4tZc=">
+                </div>
+            </div>
+    
+            <div class="personas">
+                <h3>Andrea Mendoza</h3>
+                <p>Es un lugar perfecto <br>
+                    para relajarse y disfrutar <br>
+                    al maximo de la naturaleza.<br>
+                    Gracias por los precios <br>
+                    accesibles. </p>
+                <div class="calificacion">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+                </div>
+                <div class="img-persona">
+                    <img src="https://efeminista.com/wp-content/uploads/2021/09/amelia-tiganus-explotacion-mujeres-645x500.jpg?crop=1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--pie de pagina-->
+    <footer>
+     <div class="pie-pagina">
+         <div class="informacion">
+            <div class="info">
+                <h4>CONTÁCTANOS</h4>
+                <hr class="barra-footer1">
+                <p><strong>Email:</strong> hotelchusay@gmail.com</p>
+                <p><strong>Teléfono:</strong>  985 148 216</p>
+                <p><strong>Oficina: </strong> Av. Girasoles<br>
+                Los Olivos, Lima, Perú</p>
+            </div>
+    
+            <div class="info">
+                <h4>ENLACE</h4>
+                <hr class="barra-footer2">
+                <a href="index.html">Inicio</a><br>
+                <a href="domos.html">Domos</a><br>
+                <a href="servicios.html">Servicios</a><br>
+                <a href="contacto.html">Contacto</a><br>
+                <a href="reservar.html">Reserva</a>
+            </div>
+    
+            <div class="info">
+                <h4 class="ultimo">ESCRÍBENOS</h4>
+                <hr class="barra-footer3">
+                <form class="form-ultimo">
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="Ingresa tu e-mail"><br>
+                    <label>Mensaje:</label><br>
+                    <input class="mensaje" type="text" placeholder="Ingresa tu mensaje"><br>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+         </div>
+        
+        <hr class="barra-final">
+        <div class="final">
+            <h2>Ch'usay Hotel</h2>
+            <div class="todo-redes">
+                <a class="redes" href=""><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" width="40"></a>
+                <a class="redes" href=""><img src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_640.png" width="40"></a>
+                <a class="redes" href=""><img src="https://icones.pro/wp-content/uploads/2021/02/youtube-icone.png" width="40"></a>
+            </div>
+           
+        </div>
+     </div>
+    </footer>
+    
+    <script src="menu.js"></script>
+    </body>
+</html>
